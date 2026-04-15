@@ -1,11 +1,120 @@
+<!-- Ashley: hero, snapshots, hours and location -->
+<!-- Ava: prices, reservations, staff, nav -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dino Highlights</title>
+    <link rel="stylesheet" href="styleMain.css">
 </head>
 <body>
-    
+    <img class="hero">
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#snapshots">Snapshots</a></li>
+            <li><a href="#hoursAndLocation">Hours and Location</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#people">People</a></li>
+        </ul>
+    </nav>
+    <section id="overview">
+        <h1>Museum</h1>
+        <p></p>
+    </section>
+    <section id="snapshots">
+        <a><div id="fossilization">
+            <div id="textGroup">
+                <h2>Fossilization</h2>
+                <p></p>
+            </div>
+            <img>
+        </div></a>
+        <a><div id="highlightedDino">
+            <div id="textGroup">
+                <h2>Therizinosaur</h2>
+                <p></p>
+            </div>
+            <img>
+        </div></a>
+    </section>
+    <section id="hoursAndLocation">
+        <div id="hours">
+            <h2>Hours</h2>
+            <dl>
+                <dt></dt>
+                    <dd></dd>
+            </dl>
+        </div>
+        <div id="location">
+            <h2>Location</h2>
+            <div id="textGroup">
+                <p></p>
+                <p></p>
+            </div>
+            <img>
+        </div>
+    </section>
+    <section id="prices">
+        <h2>Prices</h2>
+        <p></p>
+    </section>
+    <section id="reservations">
+        <h2>Request a Reservation</h2>
+        <p></p>
+        <form>
+            <div>
+                <label for="reservationName">Name</label>
+                <input type="text" id="reservationName" placeholder="Type your full name here" required>
+            </div>
+            <div>
+                <label for="reservationEmail">Email</label>
+                <input type="text" id="reservationEmail" placeholder="Type your email here" required>
+            </div>
+            <div>
+                <label for="reservationDate">Reservation Date and Starting Time</label>
+                <input type="datetime-local" id="reservationDate" required>
+            </div>
+            <div>
+                <label for="reservationPartyNumber">Size of Party</label>
+                <input type="number" id="reservationPartyNumber" step="1" placeholder="Type how many people are in your party here" required>
+            </div>
+            <label for="reservationComments">Additional Comments</label>
+            <textarea id="reservationComments" rows="5" cols="20" placeholder="Type any comments here."></textarea>
+            <button type="submit" id="submitReservation">Request Reservation</button>
+        </form>
+    </section>
+    <section id="people">
+        <h2>Staff</h2>
+        <div id="peopleCardGroup">
+            <div id="peopleCard">
+                <img>
+                <div id="textGroup">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div id="peopleCard">
+                <img>
+                <div id="textGroup">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div id="peopleCard">
+                <img>
+                <div id="textGroup">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p></p>
+    </footer>
 </body>
 </html>
