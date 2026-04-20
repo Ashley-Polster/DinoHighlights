@@ -21,7 +21,7 @@
             <li><a href="#hoursAndLocation">Hours and Location</a></li>
             <li><a href="#prices">Prices</a></li>
             <li><a href="#reservations">Reservations</a></li>
-            <li><a href="#people">People</a></li>
+            <li><a href="#people">Staff</a></li>
         </ul>
     </nav>
     <section id="overview">
@@ -76,7 +76,8 @@
     </section>
     <section id="prices">
         <h2>Prices</h2>
-        <p></p>
+        <h3>General admission fees are $5</h3>
+        <p>Children ages 7 and under are free. As well as veterans and seniors above the age of 65.</p>
     </section>
     <section id="reservations">
         <h2>Request a Reservation</h2>
@@ -96,35 +97,47 @@
             </div>
             <div>
                 <label for="reservationPartyNumber">Size of Party</label>
-                <input type="number" id="reservationPartyNumber" step="1" placeholder="Type how many people are in your party here" required>
+                <input type="number" id="reservationPartyNumber" step="1" placeholder="Select how many people are in your party here" required>
             </div>
-            <label for="reservationComments">Additional Comments</label>
-            <textarea id="reservationComments" rows="5" cols="20" placeholder="Type any comments here."></textarea>
+
+            <div>
+                <label for="reservationComments">Additional Comments</label>
+                <textarea id="reservationComments" rows="5" cols="20" placeholder="Type any comments here"></textarea>
+            </div>
             <button type="submit" id="submitReservation">Request Reservation</button>
         </form>
     </section>
     <section id="people">
         <h2>Staff</h2>
-        <div id="peopleCardGroup">
-            <div id="peopleCard">
-                <img>
-                <div id="textGroup">
-                    <h3></h3>
-                    <p></p>
+        <div class="peopleCardGroup">
+
+            <div class="peopleCard">
+                <img src="Jamie.jpg" alt="Jamie profile">
+                <div class="textGroup">
+                    <h3>Curator</h3>
+                    <p>Jamie Lesin 
+                        <br>Email: Jamiesemail@gmail.com
+                    </p>
                 </div>
             </div>
-            <div id="peopleCard">
-                <img>
-                <div id="textGroup">
-                    <h3></h3>
-                    <p></p>
+
+            <div class="peopleCard">
+                <img src="David.jpg" alt="David profile">
+                <div class="textGroup">
+                    <h3>Manager</h3>
+                    <p>David Karls 
+                        <br> Email: Davidemail@gmail.com
+                    </p>
                 </div>
             </div>
-            <div id="peopleCard">
-                <img>
-                <div id="textGroup">
-                    <h3></h3>
-                    <p></p>
+
+            <div class="peopleCard">
+                <img src="Kendra.jpg" alt="Kendra profile">
+                <div class="textGroup">
+                    <h3>Tour Guide</h3>
+                    <p>Kendra Heils 
+                        <br>Email: Kendra39@icloud.com
+                    </p>
                 </div>
             </div>
         </div>
