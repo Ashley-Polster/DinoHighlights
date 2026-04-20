@@ -6,9 +6,9 @@
 }
 
 body{
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
     font-family: Arial, sans-serif;
-
 }
 
 img{
@@ -60,7 +60,6 @@ nav a:active {
 
 section{
     padding: 40px 20px;
-
 }
 
 h1{
@@ -241,15 +240,32 @@ color: white;
 #fossilization, #highlightedDino{
     display: flex;
     transition: all 0.3s ease;
+    background: var(--orange);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    border: 2px solid var(--green);
 }
 
 /* hoursAndLocation */
 #hoursAndLocation{
     display: flex;
+    background: var(--orangeMuted);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    overflow: hidden; 
+    border: 2px solid var(--orange);
+}
+#location{
+    display: flex;
+    flex-wrap: wrap;
+}
+#location #textGroup{
+    max-width: 200px;
 }
 iframe{
-    min-width: 100px;
-    max-width: 400px;
+    width: 60vw;
     min-height: 100px;
-    max-height: 200px;
+    max-height: 300px;
 }
