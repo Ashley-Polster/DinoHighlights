@@ -6,9 +6,18 @@
 }
 
 body{
+    margin: 10px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 nav{
+
     background-color: var(--blue);
     position: sticky;
     top: 0;
@@ -18,10 +27,31 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
+    margin: 0;  
+    padding: 0;
 }
+
+
 nav a {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
     text-decoration: none;
     color: white;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+
+    background-color: white;
+    color: black;
+}
+
+nav a:active {
+
+    background-color: var(--orange);
 }
 
 #fossilization, #highlightedDino{
@@ -29,7 +59,7 @@ nav a {
 }
 
 section{
-    border: 2px solid var(--orangeMuted)
+    padding: 40px 20px;
 }
 
 h1{
@@ -41,6 +71,141 @@ h2{
     color: var(--green);
 }
 
+#prices {
+
+background-color: var(--blue);
+color: white;
+}
+
+#prices h2 {
+    color: black;
+}
+
+
+#reservations {
+    padding: 40px 20px;
+    margin: 0 auto;
+}
+
+#reservations form{
+
+    background-color: var(--orangeMuted);
+    padding: 25px;
+    border-radius: 12px;
+    border:2px solid var(--orange);;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#reservations form div {
+
+    display: flex;
+    flex-direction: column;
+}
+
+#reservations label {   
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px;
+    color: var(--green);
+
+}
+
+#reservations input,
+#reservations textarea {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+
+#reservations input:focus,
+#reservations textarea:focus {
+
+    outline: 2px solid var(--blue);
+
+}
+
+#submitReservation {
+
+    margin-top: 12px;
+    padding: 15px;
+    border:none;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: white;
+    transition: all 0.3s ease;
+
+}
+
+#submitReservation:hover {
+
+    transform: translate(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1.0);
+}
+
+#people {
+
+    padding: 40px 20px;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.peopleCardGroup {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.peopleCard {
+    background: var(--orangeMuted);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    overflow: hidden; 
+    border: 2px solid var(--orange);
+}
+
+.textGroup {
+    padding: 20px;
+    text-align: left;
+}
+
+.peopleCard img{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+@media (max-width: 800px) {
+
+
+     .peopleCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .peopleCardGroup{
+        grid-template-columns: 1fr;
+    }
+
+    .peopleCard img {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .textGroup {
+        padding: 10px;
+    }
+}
 
 /* Ashley's additions */
 /* hero */
@@ -75,15 +240,32 @@ h2{
 #fossilization, #highlightedDino{
     display: flex;
     transition: all 0.3s ease;
+    background: var(--orange);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    border: 2px solid var(--green);
 }
 
 /* hoursAndLocation */
 #hoursAndLocation{
     display: flex;
+    background: var(--orangeMuted);
+    border-radius: 12px;
+    display: flex;
+    padding: 10px;
+    overflow: hidden; 
+    border: 2px solid var(--orange);
+}
+#location{
+    display: flex;
+    flex-wrap: wrap;
+}
+#location #textGroup{
+    max-width: 200px;
 }
 iframe{
-    min-width: 100px;
-    max-width: 400px;
+    width: 60vw;
     min-height: 100px;
-    max-height: 200px;
+    max-height: 300px;
 }
