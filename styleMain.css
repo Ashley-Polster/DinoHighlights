@@ -207,3 +207,92 @@ color: white;
         padding: 10px;
     }
 }
+:root{
+    --green: #1c850e;
+    --blue: #13ac9f;
+    --orangeMuted: #faca61;
+    --orange: #ffae00;
+}
+
+body{
+}
+
+nav{
+    background-color: var(--blue);
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#fossilization, #highlightedDino{
+    background-color: var(--orange);
+}
+
+section{
+    border: 2px solid var(--orangeMuted)
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--green);
+}
+h2{
+    font-size: 2rem;
+    color: var(--green);
+}
+
+
+/* Ashley's additions */
+/* hero */
+.hero{
+    position: relative;
+    display: inline-block;
+}
+.hero img{
+    width: 100vw;
+    height: auto;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,1));
+}
+
+/* snapshots */
+#snapshots a{
+    text-decoration: none;
+    color: black;
+}
+#fossilization:hover, #highlightedDino:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 10px 5px black;
+    background-color: var(--blue);
+}
+#fossilization, #highlightedDino{
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+/* hoursAndLocation */
+#hoursAndLocation{
+    display: flex;
+}
+iframe{
+    min-width: 100px;
+    max-width: 400px;
+    min-height: 100px;
+    max-height: 200px;
+}
