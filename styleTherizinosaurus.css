@@ -1,0 +1,34 @@
+:root{
+    --green: #1c850e;
+    --blue: #13ac9f;
+    --orangeMuted: #faca61;
+    --orange: #ffae00;
+}
+
+span.keyWord{
+    color: var(--blue);
+}
+
+/* section classes */
+#overview, #locationAndTimePeriod, #funFacts, #map{
+    background: var(--orangeMuted);
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid var(--orange);
+}
+#overview, #funFacts{
+    display: flex;
+}
+#map{
+    background: var(--orange);
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid var(--green);
+}
+#overview, #locationAndTimePeriod{
+    font-size: 2rem;
+}
+#funFacts{
+    font-size: 1.5rem;
+}
+
