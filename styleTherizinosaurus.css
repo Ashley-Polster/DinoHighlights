@@ -19,6 +19,12 @@ span.keyWord{
 #overview, #funFacts{
     display: flex;
 }
+#overview img{
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+}
 #map{
     background: var(--orange);
     border-radius: 12px;
@@ -32,3 +38,19 @@ span.keyWord{
     font-size: 1.5rem;
 }
 
+.citation{
+    color: gray;
+    font-size: .7rem;
+}
+
+@media (max-width: 800px) {
+    #overview, #funFacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #overview img{
+        max-width: none;
+        width: 100%;
+        height: auto;
+    }
+}
