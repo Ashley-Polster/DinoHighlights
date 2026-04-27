@@ -232,6 +232,13 @@ color: white;
     text-decoration: none;
     color: black;
 }
+#snapshots img{
+    max-width: 50%;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    overflow: hidden;
+}
 #fossilization:hover, #highlightedDino:hover{
     transform: translateY(-5px);
     box-shadow: 5px 10px 5px black;
@@ -242,9 +249,9 @@ color: white;
     transition: all 0.3s ease;
     background: var(--orange);
     border-radius: 12px;
-    display: flex;
     padding: 10px;
     border: 2px solid var(--green);
+    justify-content: space-between;
 }
 
 /* hoursAndLocation */
