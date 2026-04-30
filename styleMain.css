@@ -11,6 +11,22 @@ body{
     font-family: Arial, sans-serif;
 }
 
+.overlayText {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px;
+   
+}
+
+.overlayText h2 {
+    font-size: 2.5rem;
+    color: white;
+     -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--orange);
+
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -187,7 +203,7 @@ color: white;
     border-radius: 12px;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
 
 
      .peopleCard {
@@ -209,7 +225,14 @@ color: white;
     .textGroup {
         padding: 10px;
     }
+
+    .overlayText h2 {
+    font-size: 4rem;
+    -webkit-text-stroke-width: 2px;
+    }
 }
+
+
 
 /* Ashley's additions */
 /* hero */
