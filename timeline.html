@@ -1,5 +1,5 @@
 <!-- notes: add cards dynamically once with js (helps keep year ranges easily accessible), then use show/hide -->
-
+<!-- notes: change bullet point to center align. get points to align or switch to p element -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +8,7 @@
     <title>Timeline</title>
     <link rel="stylesheet" href="styleMain.css">
     <link rel="stylesheet" href="styleTimeline.css">
+    <script src="timeline.js" defer></script>
 </head>
 <body>
     <nav>
@@ -58,36 +59,53 @@
             </ul>
         </div> 
 -->
+        <div class="dinosaurCard">
+            <img src="assets/Coelophysis.jpg">
+            <div>
+                <h2>Coelophysis</h2>
+                <ul>
+                    <li>Means 'hollow form'</li>
+                    <li>Carnivorous</li>
+                    <li>2.0m long</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="dinosaurCard">
+            <img src="assets/Coelophysis.jpg">
+            <div>
+                <h2>Coelophysis</h2>
+                <ul>
+                    <li>Means 'hollow form'</li>
+                    <li>Carnivorous</li>
+                    <li>2.0m long</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="dinosaurCard">
+            <img src="assets/Coelophysis.jpg">
+            <div>
+                <h2>Coelophysis</h2>
+                <ul>
+                    <li>Means 'hollow form'</li>
+                    <li>Carnivorous</li>
+                    <li>2.0m long</li>
+                </ul>
+            </div>
+        </div> 
+        <div class="dinosaurCard">
+            <img src="assets/Coelophysis.jpg">
+            <div>
+                <h2>Coelophysis</h2>
+                <ul>
+                    <li>Means 'hollow form'</li>
+                    <li>Carnivorous</li>
+                    <li>2.0m long</li>
+                </ul>
+            </div>
+        </div> 
     </section>
     <footer>
         <p class="citation">The information on this page is from <a href="https://www.nhm.ac.uk/discover/when-did-dinosaurs-live.html">The Natural History Museum, London</a></p>
     </footer>
 </body>
 </html>
-
-<script>
-    const input = document.getElementById("yearRangeInput");
-    const yearNumOutput = document.getElementById("yearNumOutput");
-    const calculatedPeriodOutput = document.getElementById("calculatedPeriodOutput");
-
-    input.addEventListener("input", () => {
-        let yearNum = -1 * parseInt(input.value);
-        yearNumOutput.textContent = yearNum;
-        
-        /*  range: 245-66 million years ago
-            Triassic Period: 252-201 million years ago
-            Jurassic Period: 201-145 million years ago
-            Cretaceous Period: 145-66 million years ago
-        */
-        let calculatedPeriodText = "Triassic";
-        if(yearNum < 201){
-            if(yearNum >= 145){
-                calculatedPeriodText = "Jurassic";
-            }
-            else{
-                calculatedPeriodText = "Cretaceous";
-            }
-        }
-        calculatedPeriodOutput.textContent = calculatedPeriodText;
-    });
-</script>
