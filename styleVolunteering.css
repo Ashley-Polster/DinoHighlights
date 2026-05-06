@@ -54,8 +54,6 @@ nav a:active {
 }
 
 
-}
-
 section{
     padding: 40px 20px;
 
@@ -64,6 +62,7 @@ section{
 h1{
     font-size: 3rem;
     color: var(--green);
+
 }
 h2{
     font-size: 2rem;
@@ -79,9 +78,7 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin: 30px;
-
 }
-
 
 #description p {
 
@@ -91,10 +88,11 @@ h2{
 #lookFor {
     background: #f7f7f7;
     border-radius: 16px;
-    padding: 30px
+    padding: 30px;
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
 
 #lookFor h1 {
 
@@ -112,7 +110,7 @@ h2{
     line-height: 1.5;
 }
    
-}
+
 
 #lookForCardsGroup{
     display: grid;
@@ -148,7 +146,7 @@ padding: 20px;
 }
 
 
-.textGroup {
+#textGroup {
     padding: 20px;
     text-align: left;
 }
@@ -165,6 +163,7 @@ padding: 20px;
     flex-direction: column;
     gap: 10px;
     background: #f7f7f7;
+    border-radius: 16px;
     padding: 15px;
 }
 
@@ -197,50 +196,86 @@ padding: 20px;
     background: var(--green);
 }
 
+/*Avas Volunteering Application Form Styling*/
+
+form#application {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 25px;
+
+    background-color: var(--orangeMuted);
+    border-radius: 12px;
+    border: 2px solid var(--orange);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-@media (min-width: 800px) {
-
-
-     .peopleCard {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .peopleCardGroup{
-        grid-template-columns: 1fr;
-    }
-
-    .peopleCard img {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-    }
-
-    .textGroup {
-        padding: 10px;
-    }
-
-    .volunteerLayout {
-
-        display: flex;
-        gap: 40px;
-        align-items: flex-start;
-    }
-
-    #description{
-        flex: 1;
-    }
-
-    #lookFor {
-        flex:2;
-    }
-
-    .position-item button {
-        align-items: center;
-
+.form-group {
+    display: flex;
+    flex-direction: column;
 }
+
+form#application label,
+form#application p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--green);
+}
+
+form#application input[type="text"],
+form#application input[type="email"],
+form#application textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+
+form#application input:focus,
+form#application textarea:focus {
+    outline: 2px solid var(--blue);
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+    color: black;
+}
+
+form#application button[type="submit"] {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+form#application button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 
 /* Ashley's additions */
@@ -282,6 +317,52 @@ padding: 20px;
 #hoursAndLocation{
     display: flex;
 }
+
+
+
+@media (min-width: 800px) {
+
+
+     .peopleCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .peopleCardGroup{
+        grid-template-columns: 1fr;
+    }
+
+    .peopleCard img {
+        width: 100%;
+        height: auto;
+        max-width: 250px;
+    }
+
+    .textGroup {
+        padding: 10px;
+    }
+
+    .volunteerLayout {
+
+        display: block;
+        gap: 40px;
+        align-items: flex-start;
+    }
+
+    #description{
+        flex: 1;
+    }
+
+    #lookFor {
+        flex:2;
+    }
+
+    .position-item button {
+        align-items: center;
+
+}
+
 iframe{
     min-width: 100px;
     max-width: 400px;
