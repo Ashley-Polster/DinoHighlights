@@ -8,55 +8,54 @@
     <link rel="stylesheet" href="styleMain.css">
 </head>
 <body>
-<div class="hero">
+    <div class="hero">
         <h1>Volunteering Application Form</h1>
     </div>
-    <nav>
+       <nav>
         <ul>
             <li><a href="index.html">Return to Home Page</a></li>
         </ul>
-    </nav>
+      </nav>
 
-<form id="application">
+  <form id="application">
 
+      <div class="form-group">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="fname">
+      </div>
 
-  <div class="form-group">
-    <label for="fname">Full Name:</label>
-    <input type="text" id="fname" name="fname">
-  </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
 
-  <div class="form-group">
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-  </div>
+      <div class="form-group">
+        <p>Position Applying For:</p>
 
-  <div class="form-group">
-    <p>Position Applying For:</p>
+        <div class="radio-group">
+          <input type="radio" id="researcher" name="positionApply" value="RESEARCH">
+          <label for="researcher">Assistant Researcher</label>
+        </div>
 
-    <div class="radio-group">
-      <input type="radio" id="researcher" name="positionApply" value="RESEARCH">
-      <label for="researcher">Assistant Researcher</label>
-    </div>
+        <div class="radio-group">
+          <input type="radio" id="cleaner" name="positionApply" value="CLEANER">
+          <label for="cleaner">Janitorial</label>
+        </div>
 
-    <div class="radio-group">
-      <input type="radio" id="cleaner" name="positionApply" value="CLEANER">
-      <label for="cleaner">Janitorial</label>
-    </div>
+        <div class="radio-group">
+          <input type="radio" id="apprentice" name="positionApply" value="APPRENTICE">
+          <label for="apprentice">Curating Apprentice</label>
+        </div>
+      </div>
 
-    <div class="radio-group">
-      <input type="radio" id="apprentice" name="positionApply" value="APPRENTICE">
-      <label for="apprentice">Curating Apprentice</label>
-    </div>
-  </div>
+      <div class="form-group">
+        <label for="message">Why do you want to volunteer with us?</label>
+        <textarea id="message" name="message" rows="6" placeholder="I want to be a volunteer because().My qualifications are().My experience is()."></textarea>
+      </div>
 
-  <div class="form-group">
-    <label for="message">Additional Information:</label>
-    <textarea id="message" name="message" rows="6" placeholder="I want to be a volunteer because..."></textarea>
-  </div>
-
-  <div class="form-group">
-    <button type="submit">Submit Application</button>
-  </div>
+      <div class="form-group">
+        <button type="submit">Submit Application</button>
+      </div>
 
     </form>
 
