@@ -28,6 +28,7 @@ let dinosaurEncyclopedia =[
     {name:"Spinosaurus", timeBegin:-100, timeEnd:-94, meaning:"spine lizard", diet:"Carnivorous", size:"46 ft long", extension:".jpg"},
     {name:"Parasaurolophus", timeBegin:-77, timeEnd:-73, meaning:"beside crested lizard", diet:"Herbivorous", size:"30 ft long", extension:".jpg"},
     {name:"Edmontosaurus", timeBegin:-73, timeEnd:-66, meaning:"lizard from Edmonton", diet:"Herbivorous", size:"38 ft long", extension:".jpg"},
+    {name:"Therizinosaurus", timeBegin:-72, timeEnd:-66, meaning:"scythe lizard", diet:"Herbivorous", size:"31.5 ft long", extension:".png"},
     {name:"Ankylosaurus", timeBegin:-70, timeEnd:-66, meaning:"fused/bent lizard", diet:"Herbivorous", size:"23 ft long", extension:".png"},
     {name:"Tyrannosaurus", timeBegin:-69, timeEnd:-66, meaning:"tyrant lizard", diet:"Carnivorous", size:"41 ft long", extension:".jpg"},
     {name:"Triceratops", timeBegin:-68, timeEnd:-66, meaning:"three-horned face", diet:"Herbivorous", size:"28 ft long", extension:".jpg"}
