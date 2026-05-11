@@ -1,81 +1,3 @@
-:root{
-    --green: #1c850e;
-    --blue: #13ac9f;
-    --orangeMuted: #faca61;
-    --orange: #ffae00;
-}
-
-body{
-    margin: 0;
-    font-family: Arial, sans-serif;
-
-}
-
-
-img{
-    max-width: 100%;
-    height: auto;
-}
-
-nav{
-
-    background-color: var(--blue);
-    position: sticky;
-    top: 0;
-}
-nav #pageNav{
-    background-color: var(--orange);
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    margin: 0;  
-    padding: 0;
-}
-
-
-nav a {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-    transition: background 0.3s ease;
-}
-
-nav a:hover {
-
-    background-color: white;
-    color: black;
-}
-
-nav a:active {
-
-    background-color: var(--orange);
-}
-
-#fossilization,{
-    background-color: var(--orange);
-}
-
-section{
-    padding: 40px 20px;
-
-}
-
-h1{
-    font-size: 3rem;
-    color: var(--green);
-}
-h2{
-    font-size: 2rem;
-    color: var(--green);
-}
-
 .volunteerLayout {
     display: block;
 }
@@ -85,9 +7,7 @@ h2{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     margin: 30px;
-
 }
-
 
 #description p {
 
@@ -97,10 +17,11 @@ h2{
 #lookFor {
     background: #f7f7f7;
     border-radius: 16px;
-    padding: 30px
+    padding: 30px;
     display: flex;
     flex-direction: column;
     margin: 10px;
+}
 
 #lookFor h1 {
 
@@ -117,10 +38,7 @@ h2{
     font-size: 1rem;
     line-height: 1.5;
 }
-
    
-}
-
 #lookForCardsGroup{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -149,12 +67,55 @@ h2{
 }
 
 
+#textGroup {
+    padding: 20px;
+    text-align: left;
+}
+
+.positions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.position-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #f7f7f7;
+    border-radius: 16px;
+    padding: 15px;
+}
 
 
+.position-item h3 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--green);
+}
 
+.position-item p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
 
+.position-item button {
+    align-self: left;
+    width: 200px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: var(--blue);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-
+.position-item button:hover {
+    background: var(--green);
+}
 
 footer {
     background-color: var(--blue);
@@ -162,94 +123,109 @@ color: white;
 padding: 20px;
 }
 
+/*Avas Volunteering Application Form Styling*/
 
-.textGroup {
-    padding: 20px;
-    text-align: left;
-}
+form#application {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 25px;
 
-.timeline {
+    background-color: var(--orangeMuted);
+    border-radius: 16px;
+    border: 2px solid var(--orange);
+
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 20px;
 }
 
-.timeline-item {
+.form-group {
     display: flex;
-    gap: 15px;
-    align-items: center;
-    background: var(--orangeMuted);
-    padding: 15px;
-    border-radius: 12px;
-    border: 2px solid var(--orange);
+    flex-direction: column;
+    
 }
 
-.timeline-item img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.timeline-item h3 {
-    margin: 0;
+form#application label,
+form#application p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
     color: var(--green);
 }
 
-.timeline-item p {
-    margin: 5px 0 0;
+form#application input[type="text"],
+form#application input[type="email"],
+form#application textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
 }
 
-.therizinosaurContainer {
+form#application label[for="researcher"],
+form#application label[for="cleaner"],
+form#application label[for="apprentice"] {
 
-    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    color: #3d3d3d;
 }
 
-.overlayText {
-    position: absolute;
-    top: 50%;
-    left:50%;
+form#application input:hover,
+form#application textarea:hover {
+     transition: 0.3s ease;
+     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.4);
 }
 
-.therizinosaurContainer img {
-
-    width: 400px;
+form#application input:focus,
+form#application textarea:focus {
+    outline: 2px solid var(--blue);
 }
 
-#linkTherizinosaur a {
-    color: var(--blue);
-    text-decoration: none;
-    font-weight: bolder;
-    font-size: 18px;
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
 }
 
-@media (min-width: 800px) {
+.radio-group input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+    color: black;
+}
+
+form#application button[type="submit"] {
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+form#application button[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 
 
-     .peopleCard {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
 
-    .peopleCardGroup{
-        grid-template-columns: 1fr;
-    }
-
-    .peopleCard img {
-        width: 100%;
-        height: auto;
-        max-width: 250px;
-    }
-
-    .textGroup {
-        padding: 10px;
-    }
+@media (max-width: 800px) {
 
     .volunteerLayout {
 
-        display: flex;
+        display: block;
         gap: 40px;
         align-items: flex-start;
     }
@@ -261,51 +237,8 @@ padding: 20px;
     #lookFor {
         flex:2;
     }
-}
 
-
-/* Ashley's additions */
-/* hero */
-.hero{
-    position: relative;
-    display: inline-block;
-}
-.hero img{
-    width: 100vw;
-    height: auto;
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,1));
-}
-
-/* snapshots */
-#snapshots a{
-    text-decoration: none;
-    color: black;
-}
-#fossilization:hover, #highlightedDino:hover{
-    transform: translateY(-5px);
-    box-shadow: 5px 10px 5px black;
-    background-color: var(--blue);
-}
-#fossilization, #highlightedDino{
-    display: flex;
-    transition: all 0.3s ease;
-}
-
-/* hoursAndLocation */
-#hoursAndLocation{
-    display: flex;
-}
-iframe{
-    min-width: 100px;
-    max-width: 400px;
-    min-height: 100px;
-    max-height: 200px;
+    .position-item button {
+        align-items: center;
+    }
 }
