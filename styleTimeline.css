@@ -5,6 +5,13 @@
     --orange: #ffae00;
 }
 
+#overview, #years, #dinosaurCards{
+    background-color: var(--orangeMuted);
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid var(--orange);
+}
+
 input[type="range"]{
     width: 80vw;
 }
@@ -19,18 +26,51 @@ input[type="range"]{
     max-width: 1200px;
     text-align: left;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 15px;
     margin-top: 30px;
+    background-color: var(--blue);
+    border-color: var(--blue);
 }
 
-.dinosaurCard {
+.dinosaurCard{
     background: var(--orangeMuted);
     border-radius: 12px;
-    display: flex;
+    display: none;
     padding: 10px;
     overflow: hidden; 
     border: 2px solid var(--orange);
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease,
+        background-color 0.4s ease,
+        display 0.4s allow-discrete;
+}
+.dinosaurCard.visible{
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+@starting-style{
+    .dinosaurCard.visible{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+.dinosaurCard:hover{
+    transform: translateY(-10px);
+    box-shadow: 6px 10px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--orange);
+}
+
+ul{
+    list-style-position: inside;
+    list-style-type: circle;
+    padding: 0;
 }
 
 .dinosaurCard ul, .dinosaurCard ul li{
